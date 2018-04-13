@@ -1,4 +1,4 @@
-
+package it.andynaz.dbeaverpassworddecoder;
 
 import java.io.*;
 import java.util.Arrays;
@@ -6,17 +6,7 @@ import java.util.Arrays;
 public class SimpleStringEncrypter {
     private static final byte[] PASSWORD_ENCRYPTION_KEY = "sdf@!#$verf^wv%6Fwe%$$#FFGwfsdefwfe135s$^H)dg".getBytes();
     private static final String CHARSET = "UTF8";
-    public static void main(String[] args) throws Exception{
-        SimpleStringEncrypter simpleStringEncrypter = new SimpleStringEncrypter();
-        //System.out.println(simpleStringEncrypter.encrypt("Hello"));
-        // Get password from console
-        System.err.print("Please enter encrypted dbeaver password(file:.dbeaver-data-sources.xml): ");
-        String password = System.console().readLine();
-        // Print passowrd to see extraneous chars
-        System.err.println("\nYou have entered : \"" + password + "\"");
-        System.out.print(simpleStringEncrypter.decrypt(password));
-        System.err.println("");
-    }
+    
     public SimpleStringEncrypter() {
     }
 

@@ -19,7 +19,6 @@
 nbproject/private/
 build/
 nbbuild/
-dist/
 nbdist/
 .nb-gradle/
 
@@ -27,3 +26,5 @@ nbdist/
 .DS_Store
 *.log
 *.class
+/DBeaverPasswordDecoder/nbproject/private/
+/dist/
